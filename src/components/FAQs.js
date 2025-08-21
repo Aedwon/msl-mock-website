@@ -57,9 +57,9 @@ export default function FAQs() {
                 >
                   <span class="text-white font-semibold text-base md:text-lg">${faq.q}</span>
                   <span class="ml-4 flex items-center justify-center">
-                    <span class="relative w-6 h-6 inline-block">
-                      <span class="faq-plus-vert absolute left-1/2 top-1/2 w-1 h-5 bg-[#F2C21A] rounded transition-transform duration-300 -translate-x-1/2 -translate-y-1/2"></span>
-                      <span class="faq-plus-horiz absolute left-1/2 top-1/2 h-1 w-5 bg-[#F2C21A] rounded transition-all duration-300 -translate-x-1/2 -translate-y-1/2"></span>
+                    <span class="faq-icon relative w-6 h-6 inline-block align-middle">
+                      <span class="faq-bar faq-bar-vert absolute left-1/2 top-1/2 w-1 h-5 bg-[#F2C21A] rounded transition-transform duration-300 -translate-x-1/2 -translate-y-1/2"></span>
+                      <span class="faq-bar faq-bar-horiz absolute left-1/2 top-1/2 h-1 w-5 bg-[#F2C21A] rounded -translate-x-1/2 -translate-y-1/2"></span>
                     </span>
                   </span>
                 </button>

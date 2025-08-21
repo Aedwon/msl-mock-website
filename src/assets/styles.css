@@ -1,26 +1,22 @@
 /* FAQ Accordion Plus/Minus Animation */
-.faq-plus-vert,
-.faq-plus-horiz {
-    transition: transform 0.3s cubic-bezier(.4,0,.2,1), background 0.3s;
+.faq-bar {
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
 }
-
-.faq-item button[aria-expanded="true"] .faq-plus-vert {
-    transform: rotate(90deg) scaleX(0);
+.faq-bar-vert {
+  /* Default: vertical */
+  transform: translate(-50%, -50%) rotate(0deg);
 }
-
-.faq-item button[aria-expanded="true"] .faq-plus-horiz {
-    transform: rotate(90deg);
-    background-color: #F2C21A;
+.faq-bar-horiz {
+  /* Always horizontal */
+  transform: translate(-50%, -50%) rotate(0deg);
 }
-.faq-item button[aria-expanded="false"] .faq-plus-vert {
-    transform: rotate(0deg) scaleX(1);
+.faq-item button[aria-expanded="true"] .faq-bar-vert {
+  /* Rotate vertical bar to horizontal (merge with horizontal bar) */
+  transform: translate(-50%, -50%) rotate(90deg);
 }
-.faq-item button[aria-expanded="false"] .faq-plus-horiz {
-    transform: rotate(0deg);
-    background-color: #F2C21A;
-}
-.faq-answer.open {
-    overflow: visible;
+.faq-item button[aria-expanded="false"] .faq-bar-vert {
+  /* Default: vertical */
+  transform: translate(-50%, -50%) rotate(0deg);
 }
 body {
     margin: 0;
