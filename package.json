@@ -4,7 +4,8 @@
   "description": "This is a simple web application project structured to demonstrate best practices in web development. Below are the details regarding the project setup, usage, and other relevant information.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/assets/styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,9 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
   }
-}
-"scripts": {
-  "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/assets/styles.css --watch"
 }
