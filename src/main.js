@@ -1,22 +1,24 @@
+
 import Navbar from './components/Navbar.js';
 import Hero from './components/Hero.js';
 import About, { runAboutCountUp } from './components/About.js';
 import Programs from './components/Programs.js';
 import Footer from './components/Footer.js';
+import Testimonials from './components/Testimonials.js';
+import FAQs from './components/FAQs.js';
+import useFaqAccordion from './hooks/useFaqAccordion.js';
 
 document.getElementById('app').innerHTML = `
-        ${Navbar()}
-        ${Hero()}
-        ${About()}
-        ${Programs()}
-        <section id="contact" class="py-16 bg-white text-center">
-                <div class="container mx-auto px-4">
-                        <h2 class="text-3xl font-bold mb-4 text-brand">Contact Us</h2>
-                        <p class="mb-6 text-black">You can add a contact form or details here.</p>
-                </div>
-        </section>
-        ${Footer()}
+    ${Navbar()}
+    ${Hero()}
+    ${About()}
+    ${Programs()}
+    ${Testimonials()}
+    ${FAQs()}
+    ${Footer()}
 `;
+// Initialize FAQ accordion logic after DOM is updated
+useFaqAccordion();
 
 // --- Desktop Dropdowns ---
 const dropdowns = [

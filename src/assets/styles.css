@@ -1,3 +1,27 @@
+/* FAQ Accordion Plus/Minus Animation */
+.faq-plus-vert,
+.faq-plus-horiz {
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1), background 0.3s;
+}
+
+.faq-item button[aria-expanded="true"] .faq-plus-vert {
+    transform: rotate(90deg) scaleX(0);
+}
+
+.faq-item button[aria-expanded="true"] .faq-plus-horiz {
+    transform: rotate(90deg);
+    background-color: #F2C21A;
+}
+.faq-item button[aria-expanded="false"] .faq-plus-vert {
+    transform: rotate(0deg) scaleX(1);
+}
+.faq-item button[aria-expanded="false"] .faq-plus-horiz {
+    transform: rotate(0deg);
+    background-color: #F2C21A;
+}
+.faq-answer.open {
+    overflow: visible;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
