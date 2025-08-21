@@ -1,19 +1,19 @@
-// This file initializes the application and renders the Header component to the DOM.
+import Navbar from './components/Navbar.js';
+import Hero from './components/Hero.js';
+import About from './components/About.js';
+import Services from './components/Services.js';
+import Footer from './components/Footer.js';
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Header from './components/Header';
-
-const App = () => {
-    return (
-        <div>
-            <Header />
-            <main>
-                <h1>Welcome to My Website</h1>
-                <p>This is a simple web application.</p>
-            </main>
+document.getElementById('app').innerHTML = `
+    ${Navbar()}
+    ${Hero()}
+    ${About()}
+    ${Services()}
+    <section id="contact" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-brand">Contact Us</h2>
+            <p class="mb-6 text-black">You can add a contact form or details here.</p>
         </div>
-    );
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+    </section>
+    ${Footer()}
+`;
