@@ -57,7 +57,7 @@ export default function Programs() {
               <!-- Description (hidden by default, appears on hover) -->
               <div class="absolute left-0 right-0 z-20 pointer-events-none"
                    style="top: calc(50% - 20px); transform: translateY(-50%); display: flex; justify-content: center;">
-                <p class="text-white text-center text-base md:text-lg opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0 transition-all duration-300 px-4 py-3 pointer-events-auto max-w-[90%]">
+                <p class="text-white text-center text-base md:text-lg leading-relaxed opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0 transition-all duration-300 px-2 md:px-4 py-2 md:py-3 rounded-lg max-w-xs md:max-w-sm lg:max-w-md pointer-events-auto">
                   ${program.desc}
                 </p>
               </div>
