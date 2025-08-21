@@ -1,14 +1,14 @@
 import Navbar from './components/Navbar.js';
 import Hero from './components/Hero.js';
-import About from './components/About.js';
-import Services from './components/Services.js';
+import About, { runAboutCountUp } from './components/About.js';
+import Programs from './components/Programs.js';
 import Footer from './components/Footer.js';
 
 document.getElementById('app').innerHTML = `
         ${Navbar()}
         ${Hero()}
         ${About()}
-        ${Services()}
+        ${Programs()}
         <section id="contact" class="py-16 bg-white text-center">
                 <div class="container mx-auto px-4">
                         <h2 class="text-3xl font-bold mb-4 text-brand">Contact Us</h2>
@@ -162,3 +162,5 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+
+runAboutCountUp();

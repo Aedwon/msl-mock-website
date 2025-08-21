@@ -15,11 +15,18 @@ export default function Hero() {
           Moonton Student Leaders (MSL) Philippines enables campuses, partners, and creators to shape the future of gaming communities nationwide.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4 w-full">
-          <a href="#membership" class="bg-brand text-black px-8 py-3 rounded font-semibold shadow hover:bg-black hover:text-brand border-2 border-brand transition w-full sm:w-auto">
+          <a 
+            href="#membership" 
+            class="bg-brand text-black px-8 rounded font-semibold shadow hover:bg-black hover:text-brand border-2 border-brand transition w-full sm:w-auto flex items-center justify-center"
+            style="height:48px;"
+          >
             Become A Member
           </a>
-          <a href="#partnership" class="text-white px-8 py-3 rounded font-semibold hover:underline w-full sm:w-auto transition">
-            Part of an Esports Org? Partner With Us &rarr;
+          <a 
+            href="#partnership" 
+            class="text-white px-8 py-3 rounded font-semibold hover:underline w-full sm:w-auto transition flex items-center justify-center"
+          >
+            Partner With Us &rarr;
           </a>
         </div>
       </div>

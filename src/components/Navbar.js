@@ -16,12 +16,14 @@ export default function Navbar() {
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div id="about-dropdown" class="absolute left-0 mt-2 w-56 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50">
-            <a href="#core-team" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">The Core Team</a>
-            <a href="#campus-dept" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Campus</a>
-            <a href="#partnerships-dept" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Partnerships</a>
-            <a href="#general-affairs" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">General Affairs</a>
-            <a href="#contents-social" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Contents and Social Media</a>
+          <div id="about-dropdown" class="absolute left-0 mt-2 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50 min-w-max px-0">
+            <div class="py-2">
+              <a href="#core-team" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">The Core Team</a>
+              <a href="#campus-dept" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Campus</a>
+              <a href="#partnerships-dept" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Partnerships</a>
+              <a href="#general-affairs" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">General Affairs</a>
+              <a href="#contents-social" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Contents and Social Media</a>
+            </div>
           </div>
         </div>
         <div class="relative">
@@ -31,12 +33,14 @@ export default function Navbar() {
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div id="programs-dropdown" class="absolute left-0 mt-2 w-56 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50">
-            <a href="#msl-network" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">The MSL Network</a>
-            <a href="#buffs-support" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Buffs and Support</a>
-            <a href="#msl-communities" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">MSL Communities</a>
-            <a href="#referral-program" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Referral Programs</a>
-            <a href="#rise" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">R.I.S.E.</a>
+          <div id="programs-dropdown" class="absolute left-0 mt-2 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50 min-w-max px-0">
+            <div class="py-2">
+              <a href="#msl-network" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">The MSL Network</a>
+              <a href="#buffs-support" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Buffs and Support</a>
+              <a href="#msl-communities" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">MSL Communities</a>
+              <a href="#referral-program" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Referral Programs</a>
+              <a href="#rise" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">R.I.S.E.</a>
+            </div>
           </div>
         </div>
         <a href="#news-events" class="font-medium text-white navbar-parent-link">News and Events</a>
