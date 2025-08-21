@@ -51,22 +51,33 @@ export default function Footer() {
               </li>
             </ul>
             <div class="flex gap-4 items-center mb-4">
-              <!-- Facebook -->
+              <!-- Facebook Outline -->
               <a href="https://www.facebook.com/MSLPhilippines" target="_blank" aria-label="Facebook" class="footer-social group">
-                <span class="iconify footer-icon" data-icon="mdi:facebook" data-width="24" data-height="24"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="footer-icon">
+                  <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3.8" d="M36 12.6h-6.013c-1.086 0-1.967.88-1.967 1.967v6.9H36l-1.169 7.597h-6.81V43h-8.776V29.064H12v-7.597h7.151l.094-7.21l-.013-1.31A7.87 7.87 0 0 1 27.099 5H36z"/>
+                </svg>
               </a>
-              <!-- Facebook MCC -->
+              <!-- Facebook MCC Outline -->
               <a href="https://www.facebook.com/MSLCollegiateCup" target="_blank" aria-label="Facebook MCC" class="footer-social group relative">
-                <span class="iconify footer-icon" data-icon="mdi:facebook" data-width="24" data-height="24"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="footer-icon">
+                  <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3.8" d="M36 12.6h-6.013c-1.086 0-1.967.88-1.967 1.967v6.9H36l-1.169 7.597h-6.81V43h-8.776V29.064H12v-7.597h7.151l.094-7.21l-.013-1.31A7.87 7.87 0 0 1 27.099 5H36z"/>
+                </svg>
                 <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xs text-[#F2C21A] font-bold">MCC</span>
               </a>
-              <!-- Youtube -->
+              <!-- Youtube Outline -->
               <a href="https://www.youtube.com/@MSLPhilippines" target="_blank" aria-label="YouTube" class="footer-social group">
-                <span class="iconify footer-icon" data-icon="mdi:youtube" data-width="24" data-height="24"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="footer-icon">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1">
+                    <path stroke-width="4" d="M11.064 10.414Q19.378 10 23.998 10t12.939.415a6 6 0 0 1 5.68 5.492q.381 4.55.381 8.017q0 3.508-.39 8.128a6 6 0 0 1-5.587 5.483Q29.91 38 23.998 38q-5.91 0-13.018-.465a6 6 0 0 1-5.587-5.48q-.395-4.655-.395-8.131q0-3.435.385-8.02a6 6 0 0 1 5.68-5.49Z"/>
+                    <path stroke-width="3.429" d="M21 19.61v8.796a.857.857 0 0 0 1.33.715l6.597-4.36a.857.857 0 0 0 .006-1.427l-6.598-4.436a.857.857 0 0 0-1.335.711Z"/>
+                  </g>
+                </svg>
               </a>
-              <!-- TikTok -->
+              <!-- TikTok Outline -->
               <a href="https://www.tiktok.com/@moontonstudentleaders.ph" target="_blank" aria-label="TikTok" class="footer-social group">
-                <span class="iconify footer-icon" data-icon="ic:baseline-tiktok" data-width="24" data-height="24"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="footer-icon">
+                  <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3.833" d="M21.358 19.14q-8.833-.426-12.28 6.298c-3.446 6.725-.598 17.729 10.9 17.729c11.5 0 11.832-11.112 11.832-12.276V17.875q3.69 2.336 6.22 2.813q2.533.476 3.22.422v-6.476q-2.342-.282-4.05-1.076c-1.709-.794-5.096-2.997-5.096-6.226q.003.024 0-2.499h-7.118q-.031 23.724 0 26.058c.031 2.334-1.78 5.6-5.45 5.6c-3.672 0-5.483-3.263-5.483-5.367c0-1.288.443-3.155 2.272-4.538c1.085-.82 2.59-1.148 5.033-1.148z"/>
+                </svg>
               </a>
             </div>
           </div>
@@ -80,23 +91,16 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-    <!-- Iconify CDN -->
-    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
     <style>
       .footer-icon {
-        color: #F2C21A;
-        transition: color 0.2s, background 0.2s;
-        stroke-width: 2;
-        stroke: #F2C21A;
+        color: #b89e2c;
+        stroke: #b89e2c;
         fill: none;
+        transition: color 0.2s, stroke 0.2s;
       }
       .footer-social:hover .footer-icon {
-        fill: #F2C21A;
         color: #F2C21A;
-        background: #F2C21A;
-      }
-      .footer-social .footer-icon {
-        fill: none;
+        stroke: #F2C21A;
       }
     </style>
   `;
