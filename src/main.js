@@ -8,17 +8,33 @@ import Testimonials from './components/Testimonials.js';
 import FAQs from './components/FAQs.js';
 import useFaqAccordion from './hooks/useFaqAccordion.js';
 
-document.getElementById('app').innerHTML = `
-    ${Navbar()}
-    ${Hero()}
-    ${About()}
-    ${Programs()}
-    ${Testimonials()}
-    ${FAQs()}
-    ${Footer()}
-`;
-// Initialize FAQ accordion logic after DOM is updated
-useFaqAccordion();
+// --- Multi-page logic ---
+import BuffsSupportPage from './pages/BuffsSupport.js';
+
+const navbarEl = document.getElementById('navbar');
+const footerEl = document.getElementById('footer');
+const pageContentEl = document.getElementById('page-content');
+
+if (navbarEl) navbarEl.innerHTML = Navbar();
+if (footerEl) footerEl.innerHTML = Footer();
+
+// Determine which page we're on
+const isBuffsSupport = window.location.pathname.endsWith('buffs-support.html');
+if (isBuffsSupport && pageContentEl) {
+    pageContentEl.innerHTML = BuffsSupportPage();
+    // If BuffsSupport needs interactive logic, add here
+    window.lucide && window.lucide.createIcons && window.lucide.createIcons();
+} else if (pageContentEl) {
+    // Homepage (index.html)
+    pageContentEl.innerHTML = `
+        ${Hero()}
+        ${About()}
+        ${Programs()}
+        ${Testimonials()}
+        ${FAQs()}
+    `;
+    useFaqAccordion();
+}
 
 // --- Desktop Dropdowns ---
 const dropdowns = [

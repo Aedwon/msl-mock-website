@@ -36,7 +36,7 @@ export default function Navbar() {
           <div id="programs-dropdown" class="absolute left-0 mt-2 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50 min-w-max px-0">
             <div class="py-2">
               <a href="#msl-network" class="block px-4 py-2 hover:text-[#F2C21A] text-white">The MSL Network</a>
-              <a href="#buffs-support" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Buffs and Support</a>
+              <a href="/buffs-support.html" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Buffs and Support</a>
               <a href="#msl-communities" class="block px-4 py-2 hover:text-[#F2C21A] text-white">MSL Communities</a>
               <a href="#referral-program" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Referral Programs</a>
               <a href="#rise" class="block px-4 py-2 hover:text-[#F2C21A] text-white">R.I.S.E.</a>
@@ -86,7 +86,7 @@ export default function Navbar() {
           </button>
           <div class="hidden ml-4" data-mobile-dropdown-menu="programs">
             <a href="#msl-network" class="block px-2 py-1 hover:text-[#F2C21A] text-white">The MSL Network</a>
-            <a href="#buffs-support" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Buffs and Support</a>
+            <a href="/buffs-support.html" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Buffs and Support</a>
             <a href="#msl-communities" class="block px-2 py-1 hover:text-[#F2C21A] text-white">MSL Communities</a>
             <a href="#referral-program" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Referral Programs</a>
             <a href="#rise" class="block px-2 py-1 hover:text-[#F2C21A] text-white">R.I.S.E.</a>
