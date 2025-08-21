@@ -53,35 +53,20 @@ export default function Footer() {
             <div class="flex gap-4 items-center mb-4">
               <!-- Facebook -->
               <a href="https://www.facebook.com/MSLPhilippines" target="_blank" aria-label="Facebook" class="footer-social group">
-                <!-- Heroicons outline Facebook (open source) -->
-                <svg class="w-6 h-6" fill="none" stroke="#F2C21A" stroke-width="2" viewBox="0 0 24 24">
-                  <path d="M17 2.1A9.9 9.9 0 1 0 22 12c0-5.5-4.5-9.9-10-9.9z" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15.5 8.5H14c-.7 0-1 .3-1 1v2h2.5l-.5 2H13v6h-2v-6H9v-2h2v-1.5C11 7.1 12.1 6 13.5 6h2v2.5z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <span class="iconify footer-icon" data-icon="mdi:facebook" data-width="24" data-height="24"></span>
               </a>
               <!-- Facebook MCC -->
               <a href="https://www.facebook.com/MSLCollegiateCup" target="_blank" aria-label="Facebook MCC" class="footer-social group relative">
-                <svg class="w-6 h-6" fill="none" stroke="#F2C21A" stroke-width="2" viewBox="0 0 24 24">
-                  <path d="M17 2.1A9.9 9.9 0 1 0 22 12c0-5.5-4.5-9.9-10-9.9z" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15.5 8.5H14c-.7 0-1 .3-1 1v2h2.5l-.5 2H13v6h-2v-6H9v-2h2v-1.5C11 7.1 12.1 6 13.5 6h2v2.5z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <span class="iconify footer-icon" data-icon="mdi:facebook" data-width="24" data-height="24"></span>
                 <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 text-xs text-[#F2C21A] font-bold">MCC</span>
               </a>
               <!-- Youtube -->
               <a href="https://www.youtube.com/@MSLPhilippines" target="_blank" aria-label="YouTube" class="footer-social group">
-                <!-- Lucide Youtube outline (open source) -->
-                <svg class="w-6 h-6" fill="none" stroke="#F2C21A" stroke-width="2" viewBox="0 0 24 24">
-                  <rect x="2" y="6" width="20" height="12" rx="4" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M10 9.5v5l5-2.5-5-2.5z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <span class="iconify footer-icon" data-icon="mdi:youtube" data-width="24" data-height="24"></span>
               </a>
               <!-- TikTok -->
               <a href="https://www.tiktok.com/@moontonstudentleaders.ph" target="_blank" aria-label="TikTok" class="footer-social group">
-                <!-- Simple Icons TikTok outline (open source) -->
-                <svg class="w-6 h-6" fill="none" stroke="#F2C21A" stroke-width="2" viewBox="0 0 24 24">
-                  <path d="M16.5 3v10.38a4.38 4.38 0 1 1-4.38-4.38" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M16.5 7.5c1.38 0 2.5 1.12 2.5 2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <span class="iconify footer-icon" data-icon="ic:baseline-tiktok" data-width="24" data-height="24"></span>
               </a>
             </div>
           </div>
@@ -95,15 +80,23 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    <!-- Iconify CDN -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
     <style>
-      .footer-social svg {
+      .footer-icon {
+        color: #F2C21A;
+        transition: color 0.2s, background 0.2s;
+        stroke-width: 2;
         stroke: #F2C21A;
         fill: none;
-        transition: fill 0.2s, stroke 0.2s;
       }
-      .footer-social:hover svg {
+      .footer-social:hover .footer-icon {
         fill: #F2C21A;
-        stroke: #F2C21A;
+        color: #F2C21A;
+        background: #F2C21A;
+      }
+      .footer-social .footer-icon {
+        fill: none;
       }
     </style>
   `;
