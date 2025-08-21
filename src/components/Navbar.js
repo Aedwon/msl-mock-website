@@ -18,11 +18,11 @@ export default function Navbar() {
           </button>
           <div id="about-dropdown" class="absolute left-0 mt-2 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50 min-w-max px-0">
             <div class="py-2">
-              <a href="#core-team" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">The Core Team</a>
-              <a href="#campus-dept" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Campus</a>
-              <a href="#partnerships-dept" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Partnerships</a>
-              <a href="#general-affairs" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">General Affairs</a>
-              <a href="#contents-social" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Contents and Social Media</a>
+              <a href="#core-team" class="block px-4 py-2 hover:text-[#F2C21A] text-white">The Core Team</a>
+              <a href="#campus-dept" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Campus</a>
+              <a href="#partnerships-dept" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Partnerships</a>
+              <a href="#general-affairs" class="block px-4 py-2 hover:text-[#F2C21A] text-white">General Affairs</a>
+              <a href="#contents-social" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Contents and Social Media</a>
             </div>
           </div>
         </div>
@@ -35,11 +35,11 @@ export default function Navbar() {
           </button>
           <div id="programs-dropdown" class="absolute left-0 mt-2 bg-black border border-brand rounded shadow-lg opacity-0 scale-y-95 pointer-events-none transition-all duration-200 z-50 min-w-max px-0">
             <div class="py-2">
-              <a href="#msl-network" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">The MSL Network</a>
-              <a href="#buffs-support" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Buffs and Support</a>
-              <a href="#msl-communities" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">MSL Communities</a>
-              <a href="#referral-program" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">Referral Programs</a>
-              <a href="#rise" class="block px-4 py-2 hover:bg-brand hover:text-black text-white">R.I.S.E.</a>
+              <a href="#msl-network" class="block px-4 py-2 hover:text-[#F2C21A] text-white">The MSL Network</a>
+              <a href="#buffs-support" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Buffs and Support</a>
+              <a href="#msl-communities" class="block px-4 py-2 hover:text-[#F2C21A] text-white">MSL Communities</a>
+              <a href="#referral-program" class="block px-4 py-2 hover:text-[#F2C21A] text-white">Referral Programs</a>
+              <a href="#rise" class="block px-4 py-2 hover:text-[#F2C21A] text-white">R.I.S.E.</a>
             </div>
           </div>
         </div>
@@ -70,11 +70,11 @@ export default function Navbar() {
             </svg>
           </button>
           <div class="hidden ml-4" data-mobile-dropdown-menu="about">
-            <a href="#core-team" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">The Core Team</a>
-            <a href="#campus-dept" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">Campus</a>
-            <a href="#partnerships-dept" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">Partnerships</a>
-            <a href="#general-affairs" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">General Affairs</a>
-            <a href="#contents-social" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">Contents and Social Media</a>
+            <a href="#core-team" class="block px-2 py-1 hover:text-[#F2C21A] text-white">The Core Team</a>
+            <a href="#campus-dept" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Campus</a>
+            <a href="#partnerships-dept" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Partnerships</a>
+            <a href="#general-affairs" class="block px-2 py-1 hover:text-[#F2C21A] text-white">General Affairs</a>
+            <a href="#contents-social" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Contents and Social Media</a>
           </div>
         </div>
         <div class="relative group mt-2">
@@ -85,11 +85,11 @@ export default function Navbar() {
             </svg>
           </button>
           <div class="hidden ml-4" data-mobile-dropdown-menu="programs">
-            <a href="#msl-network" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">The MSL Network</a>
-            <a href="#buffs-support" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">Buffs and Support</a>
-            <a href="#msl-communities" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">MSL Communities</a>
-            <a href="#referral-program" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">Referral Programs</a>
-            <a href="#rise" class="block px-2 py-1 hover:bg-brand hover:text-black text-white">R.I.S.E.</a>
+            <a href="#msl-network" class="block px-2 py-1 hover:text-[#F2C21A] text-white">The MSL Network</a>
+            <a href="#buffs-support" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Buffs and Support</a>
+            <a href="#msl-communities" class="block px-2 py-1 hover:text-[#F2C21A] text-white">MSL Communities</a>
+            <a href="#referral-program" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Referral Programs</a>
+            <a href="#rise" class="block px-2 py-1 hover:text-[#F2C21A] text-white">R.I.S.E.</a>
           </div>
         </div>
         <a href="#news-events" class="block font-medium text-white py-2 navbar-parent-link">News and Events</a>

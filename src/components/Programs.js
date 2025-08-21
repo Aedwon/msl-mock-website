@@ -3,7 +3,7 @@ export default function Programs() {
     {
       img: "images/homepage pegs/programs.png",
       title: "Campus Tournaments",
-      desc: "Intra-school competitions that unite student gamers and strengthen campus pride.",
+      desc: "Intra-school competitions that unite student gamers and strengthen community ties.",
       link: "#"
     },
     {
@@ -27,7 +27,7 @@ export default function Programs() {
     {
       img: "images/homepage pegs/FAQs.png",
       title: "MLBB Campaigns",
-      desc: "Creative activations and nationwide drives that celebrate the spirit of Mobile Legends.",
+      desc: "Creative activations and nationwide drives that celebrate the spirit of Mobile Legends: Bang Bang.",
       link: "#"
     }
   ];

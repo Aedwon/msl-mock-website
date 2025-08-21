@@ -1,8 +1,8 @@
 export default function FAQs() {
   const faqs = [
     {
-      q: "Who can join MSL?",
-      a: "Any student, campus esports organization, or recognized school-based group with a passion for Mobile Legends and esports development can be part of MSL."
+      q: "Who can join MSL Philippines?",
+      a: "Any student, campus esports organization, or recognized school-based group with a passion for Mobile Legends: Bang Bang and esports development can be part of MSL."
     },
     {
       q: "How can I join if I’m just an individual student?",
@@ -17,23 +17,23 @@ export default function FAQs() {
       a: "MSL Communities gain official recognition, event support, training, creative resources, and the chance to participate in nationwide campaigns and tournaments."
     },
     {
-      q: "How does MSL support esports tournaments?",
+      q: "How does MSL Philippines support esports tournaments?",
       a: "We support both campus-only tournaments and inter-school competitions by providing visibility, resources, and partnership opportunities for recognized communities."
     },
     {
-      q: "Can brands and partners collaborate with MSL?",
+      q: "Can brands and partners collaborate with MSL Philippines?",
       a: "Absolutely. The Partnerships Department works with organizations, brands, and sponsors to fuel student-led events, campaigns, and national activations."
     },
     {
-      q: "What benefits do partners gain when collaborating with MSL?",
+      q: "What benefits do partners gain when collaborating with MSL Philippines?",
       a: "Partners receive campus exposure, access to student-led events, opportunities for co-branded campaigns, and reporting that tracks engagement and impact."
     },
     {
-      q: "Do MSL members receive training or development opportunities?",
+      q: "Do MSL Philippines members receive training or development opportunities?",
       a: "Yes — we offer workshops, seminars, and mentorship programs designed to build leadership, organizational, and esports-related skills."
     },
     {
-      q: "Is MSL exclusive to Mobile Legends?",
+      q: "Is MSL Philippines exclusive to Mobile Legends: Bang Bang?",
       a: "Yes — we are powered by Moonton and are focused on growing the Mobile Legends: Bang Bang collegiate esports ecosystem nationwide."
     },
     {
