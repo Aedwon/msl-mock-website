@@ -1,81 +1,82 @@
-# My Website
 
-This is a simple web application project structured to demonstrate best practices in web development. Below are the details regarding the project setup, usage, and other relevant information.
+# MSL Philippines Website
+
+This is a scalable, multi-page website for the Moonton Student Leaders (MSL) Philippines program. It is built with vanilla JavaScript, modular components, and a simple client-side router for seamless navigation between pages.
 
 ## Project Structure
 
 ```
-my-website
-├── public
-│   └── index.html          # Main HTML document
-├── src
-│   ├── assets
-│   │   └── styles.css      # CSS styles for the website
-│   ├── components
-│   │   └── Header.js       # Header component
-│   └── main.js             # Main JavaScript file
-├── .gitignore              # Git ignore file
-├── package.json            # npm configuration file
-└── README.md               # Project documentation
+my-website/
+├── public/
+│   ├── index.html              # Main HTML document (homepage)
+│   ├── buffs-support.html      # Buffs & Support program page
+│   ├── assets/
+│   │   └── styles.css          # Global CSS styles
+│   ├── favicons/               # Favicon and manifest files
+│   └── images/                 # All static images and pegs
+├── src/
+│   ├── main.js                 # Main JS entry, handles routing and page rendering
+│   ├── tailwind.css            # Tailwind CSS source (if used)
+│   ├── assets/
+│   │   └── styles.css          # (Optional) Additional CSS
+│   ├── components/             # Reusable UI components (Navbar, Footer, Hero, etc.)
+│   ├── pages/                  # Individual page modules (BuffsSupport.js, etc.)
+│   ├── hooks/                  # Custom hooks (e.g., useFaqAccordion.js)
+│   └── utils/                  # Utility functions (empty by default)
+├── package.json                # npm configuration file
+├── postcss.config.js           # PostCSS config (if using Tailwind)
+├── tailwind.config.js          # Tailwind config (if using Tailwind)
+└── README.md                   # Project documentation
 ```
 
-## Setup Instructions
+## Getting Started
 
-1. **Clone the Repository**: 
+1. **Clone the Repository**
    ```bash
    git clone <repository-url>
    cd my-website
    ```
 
-2. **Install Dependencies**: 
-   Make sure you have Node.js installed. Then run:
+2. **Install Dependencies**
+   Ensure you have Node.js installed, then run:
    ```bash
    npm install
    ```
 
-3. **Run the Application**: 
-   You can start the development server with:
-   ```bash
-   npm start
-   ```
+3. **Run the Application**
+   If you use a dev server (like `live-server` or `vite`), start it. Or, simply open `public/index.html` or any HTML page directly in your browser.
 
-## Usage
+## Usage & Adding Pages
 
-- Open `public/index.html` in your browser to view the website.
-- Modify the CSS in `src/assets/styles.css` to change the appearance.
-- Update the `Header.js` component to customize the header section.
+- The homepage is rendered in `public/index.html` via `src/main.js`.
+- Additional pages (like Buffs & Support) are in `public/` as separate HTML files, and their content is rendered by corresponding modules in `src/pages/`.
+- To add a new page:
+  1. Create a new HTML file in `public/` (e.g., `new-page.html`).
+  2. Add a corresponding JS module in `src/pages/` (e.g., `NewPage.js`) that exports a function returning the page's HTML.
+  3. Update the router logic in `src/main.js` to render the new page when its route is visited.
+  4. Add navigation links in `src/components/Navbar.js` as needed.
 
-## Best Practices
+## Development Tips
 
-- Organize your project structure logically, separating HTML, CSS, and JavaScript files.
-- Use semantic HTML for better accessibility and SEO.
-- Keep CSS modular by using separate files for different components or sections.
-- Use version control (Git) to track changes and collaborate with others.
-- Write clear and concise documentation in the README.md file.
-- Optimize images and assets for faster loading times.
-- Test your website across different browsers and devices for compatibility.
-- Consider using a build tool or task runner for automating tasks like minification and bundling.
+- Use the `components/` folder for all reusable UI parts.
+- Use the `pages/` folder for full-page layouts and logic.
+- Use absolute paths for all static assets (e.g., `/public/images/...`).
+- Update navigation and router logic as you add more pages.
+- Use Tailwind CSS for rapid styling (optional, but recommended).
 
-## Hosting on GitHub
+## Deployment
 
-1. Create a new repository on GitHub and set it to private.
-2. Initialize your local project directory as a Git repository:
-   ```bash
-   git init
-   ```
-3. Add the remote repository:
-   ```bash
-   git remote add origin <repository-url>
-   ```
-4. Commit your changes and push to the remote repository:
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push -u origin main
-   ```
+You can deploy this site to any static hosting (GitHub Pages, Netlify, Vercel, etc.).
 
-## Publishing on GitHub Pages
+### GitHub Pages
+1. Push your code to GitHub.
+2. In repository settings, enable GitHub Pages and select the branch to publish from (usually `main`).
+3. Your site will be available at `https://<username>.github.io/<repository-name>/`.
 
-1. Ensure your project is structured correctly for deployment.
-2. In the repository settings, enable GitHub Pages and select the branch to publish from (usually `main` or `gh-pages`).
-3. Your website will be available at `https://<username>.github.io/<repository-name>/`.
+## Contributing
+
+Pull requests and suggestions are welcome! Please open an issue or PR for improvements.
+
+## License
+
+MIT
