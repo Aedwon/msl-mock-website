@@ -18,7 +18,7 @@ export default function Footer() {
             <h3 class="text-white font-semibold mb-4">Programs</h3>
             <ul class="space-y-2">
               <li><a href="#msl-network" class="text-gray-400 hover:text-[#F2C21A] transition">The MSL Network</a></li>
-              <li><a href="/buffs-support.html" class="text-gray-400 hover:text-[#F2C21A] transition">Buffs and Support</a></li>
+              <li><a href="./buffs-support.html" class="text-gray-400 hover:text-[#F2C21A] transition">Buffs and Support</a></li>
               <li><a href="#msl-communities" class="text-gray-400 hover:text-[#F2C21A] transition">MSL Communities</a></li>
               <li><a href="#referral-program" class="text-gray-400 hover:text-[#F2C21A] transition">Referral</a></li>
               <li><a href="#rise" class="text-gray-400 hover:text-[#F2C21A] transition">R.I.S.E.</a></li>
