@@ -4,7 +4,7 @@ export default function Navbar() {
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center gap-2">
-  <img src="public/images/logo.png" alt="MSL Philippines" class="h-12 w-auto" />
+  <img src="./images/logo.png" alt="MSL Philippines" class="h-12 w-auto" />
       </div>
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center"

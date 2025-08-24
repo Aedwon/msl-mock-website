@@ -44,7 +44,7 @@ export default function Programs() {
           ${programs.map(program => `
             <a href="${program.link}" 
               class="group relative flex flex-col justify-end rounded-2xl shadow border border-[#232B3B] overflow-hidden h-[220px] min-h-[220px] min-w-[260px] bg-center bg-cover transition-transform hover:-translate-y-1 focus:-translate-y-1 hover:shadow-lg focus:shadow-lg outline-none"
-              style="background-image: url('${program.img}');"
+              style="background-image: url('./images/${program.img}');"
             >
               <!-- Overlay for darkening the image (less dark by default, more on hover) -->
               <div class="absolute inset-0 z-0 transition-all duration-300 pointer-events-none
