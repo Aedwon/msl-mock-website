@@ -53,7 +53,7 @@ export default function Testimonials() {
             <div class="bg-[#1A1A1A] rounded-2xl p-6 flex flex-col h-full border border-[#232B3B]">
               <p class="text-white text-base mb-6 flex-1 leading-relaxed">“${t.quote}”</p>
               <div class="flex items-center gap-3 mt-auto">
-                <img src="./images/${t.img}" alt="${t.name}" class="w-10 h-10 rounded-full object-cover border-2 border-[#F2C21A]" />
+                <img src="${t.img}" alt="${t.name}" class="w-10 h-10 rounded-full object-cover border-2 border-[#F2C21A]" />
                 <div>
                   <div class="text-white font-semibold text-sm">${t.name}</div>
                   <div class="text-gray-400 text-xs">${t.school}</div>
