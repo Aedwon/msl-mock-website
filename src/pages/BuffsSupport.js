@@ -28,7 +28,7 @@ function BuffsSupportPage() {
     <main class="max-w-6xl mx-auto px-6 py-16 space-y-16">
       <section>
         <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
-          <i data-lucide="layers" class="w-6 h-6 text-[#F2C21A]"></i> Event Types Supported
+          Event Types Supported
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div class="flex items-start gap-4">
