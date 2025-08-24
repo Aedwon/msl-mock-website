@@ -1,31 +1,31 @@
 export default function Programs() {
   const programs = [
     {
-  img: "public/images/homepage pegs/programs.png",
+  img: "homepage pegs/programs.png",
       title: "Campus Tournaments",
       desc: "Intra-school competitions that unite student gamers and strengthen community ties.",
       link: "#"
     },
     {
-  img: "public/images/homepage pegs/news and feature.png",
+  img: "homepage pegs/news and feature.png",
       title: "Inter-school Tournaments",
       desc: "Nationwide clashes where schools face off and champions rise together.",
       link: "#"
     },
     {
-  img: "public/images/homepage pegs/hero section.png",
+  img: "homepage pegs/hero section.png",
       title: "Trainings and Seminars",
       desc: "Workshops that sharpen leadership, esports skills, and community-building know-how.",
       link: "#"
     },
     {
-  img: "public/images/homepage pegs/stats after hero section.png",
+  img: "homepage pegs/stats after hero section.png",
       title: "Event Sponsorships",
       desc: "Partner-backed opportunities that elevate student-led initiatives across campuses.",
       link: "#"
     },
     {
-  img: "public/images/homepage pegs/FAQs.png",
+  img: "homepage pegs/FAQs.png",
       title: "MLBB Campaigns",
       desc: "Creative activations and nationwide drives that celebrate the spirit of Mobile Legends: Bang Bang.",
       link: "#"
@@ -44,7 +44,7 @@ export default function Programs() {
           ${programs.map(program => `
             <a href="${program.link}" 
               class="group relative flex flex-col justify-end rounded-2xl shadow border border-[#232B3B] overflow-hidden h-[220px] min-h-[220px] min-w-[260px] bg-center bg-cover transition-transform hover:-translate-y-1 focus:-translate-y-1 hover:shadow-lg focus:shadow-lg outline-none"
-              style="background-image: url('./images/${program.img}');"
+              style="background-image: url('./public/images/${program.img}');"
             >
               <!-- Overlay for darkening the image (less dark by default, more on hover) -->
               <div class="absolute inset-0 z-0 transition-all duration-300 pointer-events-none

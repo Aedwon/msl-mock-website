@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSL Philippines — Buffs & Support</title>
+    <link rel="stylesheet" href="./public/assets/styles.css">
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <link rel="shortcut icon" href="./favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#F2C21A">
+    <meta name="theme-color" content="#F2C21A">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="./src/main.js"></script>
+</head>
+<body class="bg-black text-white font-sans">
+    <div id="navbar"></div>
+    <div id="page-content"></div>
+    <div id="footer"></div>
+    <script>
+        const fmt = new Intl.NumberFormat('en-US');
+        function formatDiamonds(n){ return fmt.format(n) + ' Diamonds'; }
+
+        function diamondsMSL(){
+            return {
+                type: 'tournament', scope: 'department', tier: 'I',
+                matrix: { department: { I:{tournament:10000,non:7000}, II:{tournament:10000,non:7000}, III:{tournament:10000,non:7000}, super:{tournament:10000,non:7000} },
+                          college: { I:{tournament:10000,non:5000}, II:{tournament:12000,non:6000}, III:{tournament:13500,non:7000}, super:{tournament:15000,non:7500} },
+                          university: { I:{tournament:12000,non:6000}, II:{tournament:13500,non:7000}, III:{tournament:15000,non:7500}, super:{tournament:16500,non:8500} },
+                          system: { I:{tournament:15000,non:7500}, II:{tournament:16500,non:8500}, III:{tournament:18000,non:9500}, super:{tournament:19500,non:10500} },
+                          nationwide: { I:{tournament:20000,non:10000}, II:{tournament:25000,non:12500}, III:{tournament:30000,non:15000}, super:{tournament:32000,non:16000} }
+                },
+                get maxDiamonds(){
+                    const base = this.matrix[this.scope][this.tier][this.type];
+                    if(this.scope==='department') return Math.min(base,10000);
+                    return base;
+                }
+            }
+        }
+        function shsEvents(){
+            return {
+                intramurals:false, type:'tournament', setup:'on-ground', livestream:'with',
+                get maxDiamonds(){
+                    if(this.type==='tournament'){
+                        if(this.setup==='on-ground') return 8000;
+                        if(this.setup==='online') return this.livestream==='with'?7000:5000;
+                    } else { return 4000; }
+                    return 0;
+                }
+            }
+        }
+        function eventsForCause(){
+            return {
+                setup:'on-ground', teamsIdx:1,
+                get maxDiamonds(){
+                    const teamBands=['4-7','8-15','>16'];
+                    const band=teamBands[this.teamsIdx-1];
+                    const matrix={ 'on-ground':{'4-7':5000,'8-15':7000,'>16':10000}, 'online':{'4-7':4000,'8-15':5000,'>16':7000}, 'other':{'4-7':2000,'8-15':3000,'>16':4000} };
+                    return matrix[this.setup][band];
+                }
+            }
+        }
+        function monetaryGrants(){
+            return {
+                scope:'college', type:'tournament', setup:'on-ground',
+                displayBudget(){
+                    if(this.scope==='nationwide') return 'Varies — pitch deck required';
+                    if(this.type==='tournament'){
+                        if(this.scope==='college') return '₱ 5,000';
+                        if(this.scope==='university') return '₱ 10,000';
+                        if(this.scope==='system') return '₱ 15,000';
+                    }
+                    return '₱ 3,000';
+                }
+            }
+        }
+        window.addEventListener('DOMContentLoaded', () => { lucide.createIcons(); });
+    </script>
+</body>
+</html>

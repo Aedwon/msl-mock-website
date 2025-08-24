@@ -3,7 +3,7 @@ export default function Hero() {
     <section 
       class="relative bg-black bg-center bg-cover bg-no-repeat text-brand py-24 md:py-32 text-center overflow-hidden"
       id="hero"
-  style="background-image: url('./images/hero-bg.webp'); max-height: 600px; background-position: center center;"
+  style="background-image: url('./public/images/hero-bg.webp'); max-height: 600px; background-position: center center;"
     >
       <!-- Overlay for darkness -->
       <div class="absolute inset-0 bg-black/60 z-0"></div>

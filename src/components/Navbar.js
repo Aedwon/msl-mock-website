@@ -4,7 +4,9 @@ export default function Navbar() {
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center gap-2">
-  <img src="./images/logo.png" alt="MSL Philippines" class="h-12 w-auto" />
+        <a href="./index.html">
+          <img src="./public/images/logo.png" alt="MSL Philippines" class="h-12 w-auto" />
+        </a>
       </div>
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center"
@@ -86,7 +88,7 @@ export default function Navbar() {
           </button>
           <div class="hidden ml-4" data-mobile-dropdown-menu="programs">
             <a href="#msl-network" class="block px-2 py-1 hover:text-[#F2C21A] text-white">The MSL Network</a>
-            <a href="./public/buffs-support.html" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Buffs and Support</a>
+            <a href="./buffs-support.html" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Buffs and Support</a>
             <a href="#msl-communities" class="block px-2 py-1 hover:text-[#F2C21A] text-white">MSL Communities</a>
             <a href="#referral-program" class="block px-2 py-1 hover:text-[#F2C21A] text-white">Referral Programs</a>
             <a href="#rise" class="block px-2 py-1 hover:text-[#F2C21A] text-white">R.I.S.E.</a>
